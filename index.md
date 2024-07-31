@@ -114,8 +114,6 @@ Software Engineer with 7+ years of experience in full stack web development. Pro
 
 ---
 
-Here are the improved project descriptions:
-
 ## Projects
 
 ### Service Management System
