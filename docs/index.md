@@ -118,7 +118,7 @@ Here are the improved project descriptions:
 
 ## Projects
 
-### Service Management System
+### [Service Management System](https://www.notion.so/Service-Management-System-SMS-Documentation-a039ba3f43624498a0441d7dbeff1827)
 
 **VAI Marketing Management | 2024 - ongoing**
 
@@ -134,7 +134,7 @@ Here are the improved project descriptions:
 
 - Created an [NPM Module](https://www.npmjs.com/package/@lfi-cloudx/wallet-services?activeTab=readme) for managing centralized and decentralized wallet systems. The module supports the creation of user wallets, feed wallets, and integrates hot wallets into the system, providing a flexible solution for diverse wallet management needs.
 
-### Crypto Platform
+### [Crypto Platform](https://kmall.io/)
 
 **VAI Marketing Management | 2022 - ongoing**
 
@@ -142,7 +142,25 @@ Here are the improved project descriptions:
 
 - Developed key components for a crypto transaction platform, including REST APIs, schedulers, queues, and middleware. Contributed to the admin panel API integration and supported UI flows with integrated APIs, ensuring seamless user interactions.
 
-### HBK Real-Time Auction Management
+### [Token Bridge](https://bridge.layerk.com/)
+
+**VAI Marketing Management | 2022 - ongoing**
+
+**Technologies Used:** MongoDB, Express, Node.js, React.js, Next.js, Swagger
+
+- Developed key components for a crypto token bridge platform, including REST APIs, schedulers, queues, and middleware. Contributed to the admin panel API integration and supported UI flows with integrated APIs, ensuring seamless user interactions.
+
+### [Spherio](https://spherioapp.com/)
+
+**LiveRoom | 2021 - Present**
+
+**Technologies Used:** Unity, Firebase SDK
+
+- Managed authentication, image uploads, and database interactions.
+- Developed and integrated features that enhance real-time augmented reality experiences on mobile devices.
+- Ensured seamless user experience by optimizing Firebase for secure data storage and retrieval.
+
+### [HBK Real-Time Auction Management](https://www.livemint.com/sports/news/first-cricket-nft-auction-clocks-335-950-in-bids-11640496533988.html)
 
 **LiveRoom | 2021 - present**
 
@@ -166,7 +184,7 @@ Here are the improved project descriptions:
 
 - Developed an AR plugin for e-commerce websites, focusing on backend API development and front-end integration. The plugin enhances user engagement by providing augmented reality experiences for online shoppers.
 
-### GRI Virtual Showroom
+### [GRI Virtual Showroom](https://showroom.gritires.com/login)
 
 **GRI Tires | 2020 - ongoing**
 
@@ -176,13 +194,13 @@ Here are the improved project descriptions:
 
 ### Bigpool Insurance
 
-**BIGPOOL | 2018 - present**
+**BIGPOOL | 2018 - 2021**
 
 **Technologies Used:** Python Django, GCP, React.js, React Native
 
 - Developed a comprehensive insurance platform with customer web portals, admin portals, and mobile applications. The platform handles insurance policies and claims efficiently, leveraging GCP for scalability and reliability.
 
-### Virtual Fitting Room
+### [Virtual Fitting Room](https://www.crunchbase.com/organization/fashion-88)
 
 **Fashion 88 | 2018 - 2019**
 
