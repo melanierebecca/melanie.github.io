@@ -120,7 +120,7 @@ Here are the improved project descriptions:
 
 ### Service Management System
 
-**VAI Marketing Management | 2023 - ongoing**
+**VAI Marketing Management | 2024 - ongoing**
 
 **Technologies Used:** MongoDB, Express, Node.js, Jest
 
