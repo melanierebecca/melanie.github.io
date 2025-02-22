@@ -150,7 +150,7 @@ Software Engineer with 7+ years of experience in full stack web development. Pro
 
 - Developed key components for a crypto token bridge platform, including REST APIs, schedulers, queues, and middleware. Contributed to the admin panel API integration and supported UI flows with integrated APIs, ensuring seamless user interactions.
 
-### **Shop Website Backend**
+### [Shop Web APP](https://horysmall.com/)
 
 **VAI Marketing Management | 2024 - ongoing**
 
