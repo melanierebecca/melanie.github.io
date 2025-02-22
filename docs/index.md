@@ -118,6 +118,17 @@ Software Engineer with 7+ years of experience in full stack web development. Pro
 
 ## Projects
 
+### [Shop Web APP](https://horysmall.com/)
+
+**VAI Marketing Management | 2024 - ongoing**
+
+**Technologies Used:** NestJS, PostgreSQL, BullMQ, TypeScript
+
+- Implemented the **payment module** using a factory strategy to support card and wallet payment types.
+- Developed the **product module** with efficient handling of reusable logic and dynamic product management.
+- Designed **reusable modules** to streamline and standardize backend functionality across the platform.
+- Integrated **queues using BullMQ** for asynchronous task processing and persistent storage to ensure high performance and reliability.
+
 ### [Service Management System](https://www.notion.so/Service-Management-System-SMS-Documentation-a039ba3f43624498a0441d7dbeff1827)
 
 **VAI Marketing Management | 2024 - ongoing**
@@ -149,17 +160,6 @@ Software Engineer with 7+ years of experience in full stack web development. Pro
 **Technologies Used:** MongoDB, Express, Node.js, React.js, Next.js, Swagger
 
 - Developed key components for a crypto token bridge platform, including REST APIs, schedulers, queues, and middleware. Contributed to the admin panel API integration and supported UI flows with integrated APIs, ensuring seamless user interactions.
-
-### [Shop Web APP](https://horysmall.com/)
-
-**VAI Marketing Management | 2024 - ongoing**
-
-**Technologies Used:** NestJS, PostgreSQL, BullMQ, TypeScript
-
-- Implemented the **payment module** using a factory strategy to support card and wallet payment types.
-- Developed the **product module** with efficient handling of reusable logic and dynamic product management.
-- Designed **reusable modules** to streamline and standardize backend functionality across the platform.
-- Integrated **queues using BullMQ** for asynchronous task processing and persistent storage to ensure high performance and reliability.
 
 ### [Spherio](https://spherioapp.com/)
 
