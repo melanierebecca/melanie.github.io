@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Melanie Rebecca — Senior Software Engineer</title>
+<meta name="description" content="Melanie Rebecca, Senior Software Engineer based in Dubai, UAE. 8+ years building backend systems for e-commerce, payments, logistics and insurance platforms.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#f6f4ee;
+    --paper-raised:#efece2;
+    --ink:#161a20;
+    --ink-soft:#4d525b;
+    --rule:#d9d4c5;
+    --blue:#1f5fa8;
+    --blue-deep:#163f70;
+    --copper:#a8672e;
+    --copper-soft:#f1e3d2;
+    --max:760px;
+  }
+ 
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    *{animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important;}
+  }
+ 
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'IBM Plex Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size:16px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+ 
+  a{color:var(--blue-deep); overflow-wrap:anywhere;}
+  a:focus-visible, button:focus-visible{outline:2px solid var(--blue); outline-offset:3px;}
+ 
+  .wrap{max-width:var(--max); margin:0 auto; padding:0 24px;}
+ 
+  /* ---------- Header / Hero ---------- */
+  header.hero{
+    border-bottom:1px solid var(--rule);
+    padding:64px 0 40px;
+  }
+  .hero-inner{
+    max-width:var(--max);
+    margin:0 auto;
+    padding:0 24px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    align-items:flex-end;
+    gap:28px;
+  }
+  .hero-name{
+    font-family:'Fraunces', serif;
+    font-optical-sizing:auto;
+    font-weight:500;
+    font-size:clamp(2.4rem, 6vw, 3.4rem);
+    line-height:1.05;
+    margin:0 0 10px;
+    letter-spacing:-0.01em;
+  }
+  .hero-role{
+    font-size:1.05rem;
+    color:var(--ink-soft);
+    margin:0 0 6px;
+    max-width:44ch;
+  }
+  .hero-avail{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.78rem;
+    color:var(--blue-deep);
+    margin:0;
+  }
+  .hero-contact{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.85rem;
+    color:var(--ink-soft);
+    text-align:right;
+    line-height:1.9;
+  }
+  .hero-contact a{color:var(--ink); text-decoration-color:var(--rule);}
+  .hero-contact a:hover{color:var(--blue-deep);}
+  .hero-contact .loc{color:var(--copper); font-weight:500;}
+ 
+  @media (max-width:600px){
+    .hero-inner{flex-direction:column; align-items:flex-start;}
+    .hero-contact{text-align:left;}
+  }
+ 
+  /* ---------- Section scaffolding ---------- */
+  section{padding:52px 0; border-bottom:1px solid var(--rule);}
+  section:last-of-type{border-bottom:none;}
+  .section-head{
+    display:flex;
+    align-items:baseline;
+    gap:16px;
+    margin-bottom:28px;
+  }
+  .section-num{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.8rem;
+    color:var(--copper);
+  }
+  h2{
+    font-family:'Fraunces', serif;
+    font-weight:500;
+    font-size:1.5rem;
+    margin:0;
+    letter-spacing:-0.01em;
+  }
+ 
+  .lede{
+    max-width:62ch;
+    font-size:1.05rem;
+    color:var(--ink-soft);
+  }
+ 
+  /* ---------- Competencies ---------- */
+  .comp-group{margin-bottom:20px;}
+  .comp-group:last-child{margin-bottom:0;}
+  .comp-label{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.78rem;
+    color:var(--ink-soft);
+    display:block;
+    margin-bottom:10px;
+  }
+  .pills{display:flex; flex-wrap:wrap; gap:8px;}
+  .pill{
+    border:1px solid var(--rule);
+    background:var(--paper-raised);
+    border-radius:3px;
+    padding:5px 11px;
+    font-size:0.86rem;
+    color:var(--ink);
+  }
+ 
+  /* ---------- Experience timeline ---------- */
+  .timeline{position:relative; padding-left:28px;}
+  .timeline::before{
+    content:"";
+    position:absolute;
+    left:5px; top:6px; bottom:6px;
+    width:1px;
+    background:var(--rule);
+  }
+  .job{position:relative; margin-bottom:40px;}
+  .job:last-child{margin-bottom:0;}
+  .job::before{
+    content:"";
+    position:absolute;
+    left:-28px; top:6px;
+    width:9px; height:9px;
+    border-radius:50%;
+    background:var(--blue);
+    border:2px solid var(--paper);
+    box-shadow:0 0 0 1px var(--blue);
+  }
+  .job-dates{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.78rem;
+    color:var(--copper);
+    margin-bottom:4px;
+  }
+  .job-title{
+    font-weight:600;
+    font-size:1.05rem;
+    margin:0 0 2px;
+  }
+  .job-org{
+    color:var(--ink-soft);
+    font-size:0.92rem;
+    margin:0 0 12px;
+  }
+  .job ul{margin:0; padding-left:18px;}
+  .job li{margin-bottom:6px; color:var(--ink); font-size:0.95rem;}
+  .job li:last-child{margin-bottom:0;}
+ 
+  /* ---------- Projects ---------- */
+  .project{
+    padding:22px 0;
+    border-top:1px solid var(--rule);
+  }
+  .project:first-child{border-top:none; padding-top:0;}
+  .project-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:baseline;
+    flex-wrap:wrap;
+    gap:6px 16px;
+    margin-bottom:8px;
+  }
+  .project-title{font-weight:600; font-size:1.02rem;}
+  .project-meta{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.78rem;
+    color:var(--ink-soft);
+  }
+  .project p{margin:0 0 10px; font-size:0.94rem; color:var(--ink-soft); max-width:64ch;}
+  .tech-tags{display:flex; flex-wrap:wrap; gap:6px;}
+  .tech-tag{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.72rem;
+    color:var(--blue-deep);
+    background:transparent;
+    border:1px solid var(--rule);
+    border-radius:3px;
+    padding:2px 7px;
+  }
+ 
+  /* ---------- Education / Certs ---------- */
+  .two-col{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:36px;
+  }
+  @media (max-width:600px){
+    .two-col{grid-template-columns:1fr;}
+  }
+  .degree{margin-bottom:20px;}
+  .degree:last-child{margin-bottom:0;}
+  .degree-title{font-weight:600; font-size:0.96rem; margin:0 0 2px;}
+  .degree-org{color:var(--ink-soft); font-size:0.88rem; margin:0 0 2px;}
+  .degree-dates{font-family:'IBM Plex Mono', monospace; font-size:0.75rem; color:var(--copper); margin-bottom:4px;}
+  .degree-detail{font-size:0.88rem; color:var(--ink-soft);}
+ 
+  .cert-list{list-style:none; margin:0; padding:0;}
+  .cert-list li{
+    font-size:0.88rem;
+    color:var(--ink);
+    padding:7px 0;
+    border-top:1px solid var(--rule);
+  }
+  .cert-list li:first-child{border-top:none;}
+ 
+  .accomplishment{
+    margin-top:28px;
+    padding:16px 18px;
+    background:var(--copper-soft);
+    border-left:3px solid var(--copper);
+    border-radius:2px;
+    font-size:0.92rem;
+  }
+ 
+  /* ---------- Footer ---------- */
+  footer{
+    background:var(--ink);
+    color:var(--paper);
+    padding:56px 0 40px;
+  }
+  footer .wrap{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    align-items:flex-end;
+    gap:24px;
+  }
+  footer h2{
+    color:var(--paper);
+    font-size:1.7rem;
+  }
+  footer .foot-links{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.88rem;
+    line-height:2;
+  }
+  footer a{color:var(--paper); text-decoration-color:#565b64;}
+  footer a:hover{color:#8fbde0;}
+  .foot-note{
+    margin-top:36px;
+    padding-top:20px;
+    border-top:1px solid #2c313a;
+    font-size:0.78rem;
+    color:#8b909a;
+    max-width:var(--max);
+    margin-left:auto; margin-right:auto;
+    padding-left:24px; padding-right:24px;
+  }
+ 
+  @media print{
+    body{background:#fff;}
+    footer{background:#fff; color:#000; border-top:1px solid #000;}
+    footer a, footer h2, footer p, footer .foot-note{color:#000 !important;}
+    section{break-inside:avoid;}
+  }
+</style>
+</head>
+<body>
+ 
+<header class="hero">
+  <div class="hero-inner">
+    <div>
+      <h1 class="hero-name">Melanie Rebecca</h1>
+      <p class="hero-role">Senior Software Engineer — backend &amp; full stack. Node.js, TypeScript, React, and AI-assisted development. 8+ years designing scalable systems for e-commerce, payments, logistics and insurance platforms.</p>
+      <p class="hero-avail">Open to remote worldwide · open to relocation across Europe (visa sponsorship required)</p>
+    </div>
+    <div class="hero-contact">
+      <div class="loc">Dubai, UAE</div>
+      <div><a href="mailto:melanie.rebecca.dev@gmail.com">melanie.rebecca.dev@gmail.com</a></div>
+      <div><a href="tel:+971562388662">+971 56 238 8662</a></div>
+      <div><a href="https://linkedin.com/in/melanie-wijesooriya">linkedin.com/in/melanie-wijesooriya</a></div>
+      <div><a href="https://github.com/melanierebecca">github.com/melanierebecca</a></div>
+    </div>
+  </div>
+</header>
+ 
+<main class="wrap">
+ 
+  <section aria-labelledby="profile-h">
+    <div class="section-head">
+      <span class="section-num">01</span>
+      <h2 id="profile-h">Profile</h2>
+    </div>
+    <p class="lede">Senior full-stack engineer with eight-plus years designing scalable backend systems for e-commerce, payments, logistics and insurance platforms. Specialized in Node.js, TypeScript, NestJS and React, with hands-on experience building microservices, payment infrastructure, shipping orchestration and cloud-native applications on AWS and GCP. Currently backup lead for a 2–4 person engineering team, trusted with independent ownership of new initiatives, with a track record of leading junior developers and applying AI-assisted engineering workflows to deliver reliable, scalable software.</p>
+  </section>
+ 
+  <section aria-labelledby="comp-h">
+    <div class="section-head">
+      <span class="section-num">02</span>
+      <h2 id="comp-h">Core skills</h2>
+    </div>
+ 
+    <div class="comp-group">
+      <span class="comp-label">languages</span>
+      <div class="pills">
+        <span class="pill">Node.js</span><span class="pill">TypeScript</span><span class="pill">JavaScript</span><span class="pill">Python</span>
+      </div>
+    </div>
+    <div class="comp-group">
+      <span class="comp-label">backend</span>
+      <div class="pills">
+        <span class="pill">NestJS</span><span class="pill">Express</span><span class="pill">Django</span>
+        <span class="pill">REST APIs</span><span class="pill">Prisma</span>
+      </div>
+    </div>
+    <div class="comp-group">
+      <span class="comp-label">frontend</span>
+      <div class="pills">
+        <span class="pill">React.js</span><span class="pill">Next.js</span><span class="pill">Angular</span>
+      </div>
+    </div>
+    <div class="comp-group">
+      <span class="comp-label">databases</span>
+      <div class="pills">
+        <span class="pill">PostgreSQL</span><span class="pill">MongoDB</span><span class="pill">Redis</span><span class="pill">DynamoDB</span>
+      </div>
+    </div>
+    <div class="comp-group">
+      <span class="comp-label">cloud &amp; devops</span>
+      <div class="pills">
+        <span class="pill">AWS</span><span class="pill">GCP</span><span class="pill">Docker</span><span class="pill">CI/CD (GitHub Actions)</span>
+      </div>
+    </div>
+    <div class="comp-group">
+      <span class="comp-label">architecture</span>
+      <div class="pills">
+        <span class="pill">Microservices</span><span class="pill">Event-driven design</span><span class="pill">BullMQ</span>
+        <span class="pill">WebSockets</span><span class="pill">JWT / RBAC</span>
+      </div>
+    </div>
+    <div class="comp-group">
+      <span class="comp-label">ai tools</span>
+      <div class="pills">
+        <span class="pill">Cursor</span><span class="pill">Claude</span><span class="pill">ChatGPT</span>
+      </div>
+    </div>
+    <div class="comp-group">
+      <span class="comp-label">leadership &amp; tools</span>
+      <div class="pills">
+        <span class="pill">Team leading</span><span class="pill">Code review</span><span class="pill">Agile/Scrum</span>
+        <span class="pill">Git</span><span class="pill">Jira</span><span class="pill">Swagger</span><span class="pill">Firebase</span>
+      </div>
+    </div>
+  </section>
+ 
+  <section aria-labelledby="exp-h">
+    <div class="section-head">
+      <span class="section-num">03</span>
+      <h2 id="exp-h">Experience</h2>
+    </div>
+ 
+    <div class="timeline">
+      <div class="job">
+        <div class="job-dates">Nov 2022 — Present</div>
+        <p class="job-title">Senior Software Engineer</p>
+        <p class="job-org">LMNTO Performance Information Technology (formerly VAI Marketing Management), Dubai</p>
+        <ul>
+          <li>Own the end-to-end checkout, payment and logistics architecture supporting multiple e-commerce platforms, processing hundreds of orders daily.</li>
+          <li>Act as backup lead for a team of 2–4 engineers, covering priorities and team direction when the lead is unavailable; entrusted with independent ownership of a new initiative outside the lead's involvement.</li>
+          <li>Integrated 4 payment gateways, including Stripe, via a modular factory-pattern payment system supporting card and wallet payments.</li>
+          <li>Built a shipping orchestration layer that dynamically routes orders to the correct logistics provider by per-platform configuration and destination-country restrictions, integrating 3 shipping providers with real-time tracking.</li>
+          <li>Cut payment and order-processing failures by building a BullMQ- and Redis-backed retry mechanism with automated notifications when max retries are exceeded.</li>
+          <li>Implemented JWT-based authentication with multi-tier RBAC across admin, manager and staff permission levels, using Prisma as the ORM for the payment and product modules.</li>
+          <li>Containerized backend services with Docker and built GitHub Actions CI/CD pipelines that run automated tests and deploy on merge.</li>
+          <li>Designed and deployed scalable NestJS microservices powering payments, wallets and logistics integrations.</li>
+          <li>Collaborated on React/Next.js integrations across customer and admin platforms.</li>
+        </ul>
+      </div>
+ 
+      <div class="job">
+        <div class="job-dates">May 2021 — Nov 2022</div>
+        <p class="job-title">Software Engineer</p>
+        <p class="job-org">LiveRoom Technologies</p>
+        <ul>
+          <li>Designed and built a real-time auction management admin dashboard for a live CricFlix auction (UAE), using Firebase Realtime Database, Firebase Auth and React.</li>
+          <li>Led a team of 2–3 junior developers, gathering client requirements and delivering enhancements to the Bigpool insurance platform; conducted code reviews for quality and functionality.</li>
+          <li>Built AWS Lambda services (Serverless framework) for the Mintzilla NFT marketplace and the GRI virtual showroom.</li>
+        </ul>
+      </div>
+ 
+      <div class="job">
+        <div class="job-dates">Jul 2018 — May 2021</div>
+        <p class="job-title">Associate Software Engineer</p>
+        <p class="job-org">LiveRoom Technologies</p>
+        <ul>
+          <li>Developed REST APIs for the Bigpool insurance platform using Django and PostgreSQL.</li>
+          <li>Built a customer web portal and admin dashboard using React; integrated APIs into the React Native mobile app.</li>
+          <li>Deployed the Django server on GCP App Engine (GAE) and React apps on GCP Kubernetes Engine (GKE).</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+ 
+  <section aria-labelledby="proj-h">
+    <div class="section-head">
+      <span class="section-num">04</span>
+      <h2 id="proj-h">Selected projects</h2>
+    </div>
+ 
+    <div class="project">
+      <div class="project-top">
+        <span class="project-title">Checkout &amp; Payments Platform</span>
+        <span class="project-meta">LMNTO · 2022–ongoing</span>
+      </div>
+      <p>End-to-end checkout, payment and logistics architecture across multiple e-commerce platforms, processing hundreds of orders daily. Integrated 4 payment gateways, including Stripe, through a modular factory-pattern system supporting card and wallet payments.</p>
+      <div class="tech-tags"><span class="tech-tag">NestJS</span><span class="tech-tag">TypeScript</span><span class="tech-tag">Stripe</span><span class="tech-tag">Prisma</span></div>
+    </div>
+ 
+    <div class="project">
+      <div class="project-top">
+        <span class="project-title">Shipping Orchestration Layer</span>
+        <span class="project-meta">LMNTO · 2023–ongoing</span>
+      </div>
+      <p>Dynamically routes orders to the correct logistics provider based on per-platform configuration and destination-country restrictions, integrating 3 shipping providers with real-time shipment tracking.</p>
+      <div class="tech-tags"><span class="tech-tag">NestJS</span><span class="tech-tag">TypeScript</span></div>
+    </div>
+ 
+    <div class="project">
+      <div class="project-top">
+        <span class="project-title">Payment Retry &amp; Reliability System</span>
+        <span class="project-meta">LMNTO · 2023</span>
+      </div>
+      <p>Redis-backed retry mechanism for failed payments and order processing, with automated notifications triggered when max retries are exceeded — reduced processing failures across the platform.</p>
+      <div class="tech-tags"><span class="tech-tag">BullMQ</span><span class="tech-tag">Redis</span></div>
+    </div>
+ 
+    <div class="project">
+      <div class="project-top">
+        <span class="project-title">RBAC Authentication System</span>
+        <span class="project-meta">LMNTO · 2023</span>
+      </div>
+      <p>Multi-tier role-based access control spanning admin, manager and staff permissions, backed by JWT authentication and Prisma ORM for the payment and product modules.</p>
+      <div class="tech-tags"><span class="tech-tag">JWT</span><span class="tech-tag">Prisma</span><span class="tech-tag">RBAC</span></div>
+    </div>
+ 
+    <div class="project">
+      <div class="project-top">
+        <span class="project-title">CI/CD &amp; Containerization</span>
+        <span class="project-meta">LMNTO · 2023–ongoing</span>
+      </div>
+      <p>Containerized backend services with Docker and built GitHub Actions pipelines that run automated tests and deploy on merge.</p>
+      <div class="tech-tags"><span class="tech-tag">Docker</span><span class="tech-tag">GitHub Actions</span></div>
+    </div>
+ 
+    <div class="project">
+      <div class="project-top">
+        <span class="project-title">HBK Real-Time Auction Management</span>
+        <span class="project-meta">LiveRoom, for CricFlix · 2021–2022</span>
+      </div>
+      <p>Real-time auction management dashboard for a live CricFlix auction in the UAE, with live updates for running and monitoring auctions.</p>
+      <div class="tech-tags"><span class="tech-tag">Firebase</span><span class="tech-tag">React.js</span></div>
+    </div>
+ 
+    <div class="project">
+      <div class="project-top">
+        <span class="project-title">Mintzilla NFT Marketplace &amp; GRI Virtual Showroom</span>
+        <span class="project-meta">LiveRoom · 2021–2022</span>
+      </div>
+      <p>AWS Lambda services, built on the Serverless framework, powering the Mintzilla NFT marketplace and the GRI virtual showroom.</p>
+      <div class="tech-tags"><span class="tech-tag">AWS Lambda</span><span class="tech-tag">Serverless</span></div>
+    </div>
+ 
+    <div class="project">
+      <div class="project-top">
+        <span class="project-title">Bigpool Insurance Platform</span>
+        <span class="project-meta">LiveRoom, for Bigpool · 2018–2022</span>
+      </div>
+      <p>Customer web portal, admin dashboard and mobile app for an insurance platform handling policies and claims, deployed on GCP.</p>
+      <div class="tech-tags"><span class="tech-tag">Django</span><span class="tech-tag">PostgreSQL</span><span class="tech-tag">React.js</span><span class="tech-tag">React Native</span><span class="tech-tag">GCP</span></div>
+    </div>
+  </section>
+ 
+  <section aria-labelledby="edu-h">
+    <div class="section-head">
+      <span class="section-num">05</span>
+      <h2 id="edu-h">Education &amp; certifications</h2>
+    </div>
+ 
+    <div class="two-col">
+      <div>
+        <div class="degree">
+          <p class="degree-title">BSc (Hons) in Computer Science</p>
+          <p class="degree-org">University College Dublin, Ireland</p>
+          <div class="degree-dates">2015 — 2019</div>
+          <p class="degree-detail">Second-Class Upper Honours (GPA 3.6)</p>
+        </div>
+      </div>
+ 
+      <div>
+        <ul class="cert-list">
+          <li>Dubai Centre for AI &amp; Dubai Future Foundation — One Million Prompters</li>
+          <li>DeepLearning.AI — Generative AI with LLMs</li>
+          <li>IBM — Fundamentals of Building AI Agents</li>
+          <li>Meta — Django Framework</li>
+          <li>AWS — Serverless APIs &amp; Applications</li>
+          <li>IBM — React Development</li>
+          <li>IBM — Agile Development &amp; Scrum</li>
+          <li>MongoDB — M150 (Authentication &amp; Authorization), M001 (Basics)</li>
+        </ul>
+ 
+        <div class="accomplishment">2023 Star Employee Award — VAI Marketing / LMNTO</div>
+      </div>
+    </div>
+  </section>
+ 
+</main>
+ 
+<footer>
+  <div class="wrap">
+    <div>
+      <h2>Let's talk.</h2>
+      <p style="color:#b7bcc4; max-width:40ch;">Open to new senior backend and full-stack opportunities — remote worldwide, or relocating across Europe with visa sponsorship.</p>
+    </div>
+    <div class="foot-links">
+      <div><a href="mailto:melanie.rebecca.dev@gmail.com">melanie.rebecca.dev@gmail.com</a></div>
+      <div><a href="tel:+971562388662">+971 56 238 8662</a></div>
+      <div><a href="https://linkedin.com/in/melanie-wijesooriya">LinkedIn</a></div>
+      <div><a href="https://github.com/melanierebecca">GitHub</a></div>
+    </div>
+  </div>
+  <div class="foot-note">Melanie Rebecca — Dubai, UAE</div>
+</footer>
+ 
+</body>
+</html>
